@@ -26,14 +26,14 @@ export default function Profilepage({}) {
         style={Styles.image1}
         source={require("../Screens/images/Rectangle3.png")}
       >
-        <Image
-          style={Styles.image2}
-          source={require("../Screens/images/shape.png")}
-        />
+        <View style={{flexDirection:"row",justifyContent:"space-between"}}>
+      
         <Image
           style={Styles.image3}
           source={require("../Screens/images/Ellipse8.png")}
         />
+        </View>
+      
 
         <Text style={Styles.text1}>Welcome to Essosa olamide</Text>
       </ImageBackground>
@@ -108,11 +108,12 @@ const Styles = StyleSheet.create({
     backgroundColor: "white",
   },
   text1: {
-    top: -20,
+    top:20,
     justifyContent: "center",
     alignSelf: "center",
     color: "white",
     fontSize: 16,
+    left:40
   },
   text2: {
     top: 30,
@@ -144,19 +145,22 @@ const Styles = StyleSheet.create({
 
   image1: {
     width: 400,
-    height: 280,
+    height: 200,
   },
   image2: {
-    width: 150,
+    width: 140,
     height: 100,
   },
   image3: {
-    top: -40,
-    borderRadius: 200,
+    top:15,
+    borderRadius: 100,
     width: 140,
     height: 140,
-    justifyContent: "center",
-    alignSelf: "center",
+    marginLeft:10
+  
+    // justifyContent: "center",
+    // alignSelf: "center",
+    
   },
 
   image4: {
